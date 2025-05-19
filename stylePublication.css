@@ -1,0 +1,88 @@
+ body { margin: 0;
+   font-family: "Merriweather", serif, sans-serif;
+   background: #f0f2f5; }
+ header { background: #007bff; color: #fff; padding: 1rem 2rem; }
+ .navbar, .dropdown-content a { color: #000; }
+ .dropdown-content a:hover { background: #f1f1f1; }
+ .navigation {
+  display: flex;
+  align-items: baseline; 
+  gap: 12px;
+}
+
+.navigation a {
+  font-size: 1rem;
+  text-decoration: none;
+  color:rgb(32, 32, 222)
+}
+.navigation a:hover{
+  color:rgb(17, 175, 237)
+}
+
+h1{
+ font-size: 2rem;
+ font-weight: bold;
+ color:#133b5c;
+}
+.navigation p {
+  font-size: 1rem;
+ text-decoration: none;
+ color:#133b5c;
+ 
+}
+
+ main { padding: 2rem;
+margin-top: 120px; }
+ table.dataTable { border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+ th { background: #007bff !important; color: #fff !important; }
+ td, th { padding: 12px !important; }
+ a.link-full { word-break: break-all; color: #007bff; text-decoration: none; }
+ a.link-full:hover { text-decoration: underline; }
+ /* Force un layout fixe pour respecter les largeurs définies */
+ #backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 9999;
+  display: none;
+  background-color: white;
+  color: #1e40af;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #2563eb;
+  color: white;
+}
+#articlesTable {
+  table-layout: fixed !important;
+  width: 100% !important;
+}
+
+/* Largeurs de colonnes */
+#articlesTable th:nth-child(1),
+#articlesTable td:nth-child(1) { width: 20% !important; }  /* Auteur */
+#articlesTable th:nth-child(2),
+#articlesTable td:nth-child(2) { width: 30% !important; }  /* Titre */
+#articlesTable th:nth-child(3),
+#articlesTable td:nth-child(3) { width: 20% !important; }  /* Revue */
+#articlesTable th:nth-child(4),
+#articlesTable td:nth-child(4) { width: 10% !important; }  /* Année */
+#articlesTable th:nth-child(5),
+#articlesTable td:nth-child(5) { width: 20% !important; }  /* Lien */
+
+/* Pour que le texte ne déborde pas */
+#articlesTable td, 
+#articlesTable th {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
