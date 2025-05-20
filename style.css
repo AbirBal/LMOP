@@ -535,10 +535,6 @@ section h2 {
 }
 
 }
-@media (max-width: 1000px) {
-
-
-}
 
 
 /* Pour petits écrans */
@@ -661,7 +657,6 @@ body.menu-open .slideshow-container {
   }
   .mySlides img {
     max-height: 400px;
-    width: 100% !important;
 }
 
 }
