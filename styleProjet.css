@@ -6,7 +6,11 @@ body {
 }
    
 .content{
-  margin-left: 100px;
+  margin-left: 100px; 
+  margin-right: auto;
+  padding: 40px;
+
+
 }
   .navigation {
   display: flex;
@@ -41,7 +45,7 @@ h1{
       gap: 10px;
       justify-content: right;
       margin-bottom: 30px;
-      margin-right: 20px;
+      margin-right: 50px;
     }
 
     .controls input {

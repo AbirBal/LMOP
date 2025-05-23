@@ -32,7 +32,7 @@ h1{
 }
 
  main { padding: 2rem;
-margin-top: 120px; }
+  margin-top: 120px; }
  table.dataTable { border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
  th { background: #007bff !important; color: #fff !important; }
  td, th { padding: 12px !important; }
@@ -68,16 +68,17 @@ margin-top: 120px; }
 
 /* Largeurs de colonnes */
 #articlesTable th:nth-child(1),
-#articlesTable td:nth-child(1) { width: 20% !important; }  /* Auteur */
+#articlesTable td:nth-child(1) { width: 30% !important; }  /* Auteur */
 #articlesTable th:nth-child(2),
 #articlesTable td:nth-child(2) { width: 30% !important; }  /* Titre */
 #articlesTable th:nth-child(3),
-#articlesTable td:nth-child(3) { width: 20% !important; }  /* Revue */
+#articlesTable td:nth-child(3) { width: 10% !important; }  /* Revue */
 #articlesTable th:nth-child(4),
 #articlesTable td:nth-child(4) { width: 10% !important; }  /* Année */
 #articlesTable th:nth-child(5),
-#articlesTable td:nth-child(5) { width: 20% !important; }  /* Lien */
-
+#articlesTable td:nth-child(5) { width: 15% !important; }  /* Lien */
+#articlesTable th:nth-child(6),
+#articlesTable td:nth-child(6) { width: 5% !important; }  /* Lien */
 /* Pour que le texte ne déborde pas */
 #articlesTable td, 
 #articlesTable th {
@@ -86,3 +87,49 @@ margin-top: 120px; }
 }
 
 
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 1rem;
+  }
+
+  .navigation a,
+  .navigation p {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+    margin-top: 100px;
+  }
+
+  table.dataTable {
+    font-size: 0.9rem;
+  }
+
+  #backToTop {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  #articlesTable th,
+  #articlesTable td {
+    font-size: 0.85rem;
+    padding: 8px !important;
+  }
+
+  /* Optional: Allow table to scroll horizontally on small screens */
+  #articlesTable {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
