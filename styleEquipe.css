@@ -36,50 +36,75 @@ h1{
  color:#133b5c;
  
 }
-
-
   .layout {
     display: flex;
     flex: 1;
   }
 
-  .navbar-left {
-      justify-content: center; /* centrer verticalement */
+ .navbar-left {
+     justify-content:center; /* centrer verticalement */
       width: 200px;
       overflow-x: hidden;
       color:black;
       position: fixed;
       top: 120px;
-      bottom: 250px;
       left: 30px;
       display: flex;
       flex-direction: column;
-      align-items: center;
       padding: 20px 10px;
       overflow-y:hidden;
       box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
-       align-items: center;   
-       height: calc(100vh - 60px); /* ← problème si la page est courte */
+      max-height: calc(100vh - 120px);
+}
 
-    }
-
-    .navbar-left a {
-      color: black;
+.navbar-left li {
+     color: black;
       text-decoration: none;
-      margin: 10px 0;
+      margin: 0px 10;
       padding: 10px;
       text-align: center;
       border-radius: 6px;
-      background-color:#7db3ec;
       width: 100%;
       transition: all 0.3s ease;
-    }
+      position:relative;
+      justify-content: center;
+}
 
-    .navbar-left a:hover {
-      background-color: rgba(11, 11, 235, 0.957);
-      color: white;
-    }
+.navbar-left a {
+  display: block;
+  width: 100%; /* ← assure la même largeur pour tous */
+  box-sizing: border-box; /* prend en compte le padding dans la largeur */
+  background-color: #7db3ec;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
 
+.navbar-left a:hover {
+  background-color: rgba(11, 11, 235, 0.957);
+  color: white;
+}
+
+.submenu {
+  display: none;
+  padding-left: 20px;
+ list-style: none; 
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  background-color: #cde1f8;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 2px 0;
+  text-align: left;
+}
 
   .content {
     margin-left: 300px;
@@ -105,11 +130,11 @@ h1{
   scroll-margin-top: 140px; /* hauteur de ta navbar */
 }
    .cards-container {
-    margin-bottom: 90px;
+    margin-bottom: 60px;
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      justify-content: center;
+      justify-content: left;
     }
 
     .card {
@@ -151,12 +176,35 @@ h1{
       height: 100%;
       object-fit: cover;
     }
+h5 {
+  font-size: 1.2rem;                /* taille légèrement augmentée */
+  font-weight: 700;                 /* texte bien marqué */
+  color: #1561DA;                   /* bleu vif */
+  letter-spacing: 1px;              /* espacement des lettres */
+  position: relative;               /* pour positionner le pseudo-élément */
+  margin-left: 20px;                /* décalage léger vers la droite */
+  background: rgba(21, 97, 218, 0.1); /* fond très léger */
+  border-radius: 5px;               /* coins arrondis */
+  transition: all 0.3s ease;        /* transition douce au hover */
+}
 
-    h4 {
-      color: #0d07bf;
-      border-left: 5px solid #1561da;
-      padding-left: 10px;
-    }
+/* Un petit effet graphique avant le titre */
+h5::before {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1561DA;
+  font-size: 1.2rem;
+}
+
+/* Effet au survol pour attirer l’attention */
+h5:hover {
+  background: rgba(21, 97, 218, 0.2);
+  color: #0d07bf;
+  padding-left: 1.2rem;
+}
+
 
     .badge {
       background-color: #1c2b21;
@@ -248,6 +296,7 @@ h1{
     width: auto;
     margin: 5px;
   }
+  
 
   .content {
     margin: 0;

@@ -188,10 +188,22 @@ body {
 .navbar-links li:hover > ul {
   display: block;
 }
-
+.navbar-links li ul li:hover > ul {
+  display: block;
+}
 .navbar-links li ul li a {
   padding: 10px 15px;
   color: black;
+
+}
+.navbar-links li ul li {
+  position: relative;
+}
+
+.navbar-links li ul li ul {
+  top: 0;
+  left: 100%; /* s'affiche à droite du sous-menu parent */
+  display: none;
 }
 
 .navbar-links li ul li a:hover {
@@ -201,6 +213,7 @@ body {
 .navbar-main, .navbar-sub, .navbar-links {
   overflow: visible !important;
 }
+
 
 /* ===============================
    RESPONSIVE DESIGN

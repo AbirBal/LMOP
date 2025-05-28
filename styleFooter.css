@@ -1,6 +1,6 @@
+
 body {
   background-color: #f3f4f6;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -17,7 +17,7 @@ footer {
   color: white;
   padding: 40px 20px 20px;
   font-family: sans-serif;
-  z-index:2;
+  z-index:1;
 }
 
 .footer-container {
