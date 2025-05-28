@@ -10,7 +10,35 @@ body {
   padding: 20px;
 
 }
+    .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-left: 6px solid #005288;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
+        .container h2 {
+            color: #005288;
+            margin-top: 0;
+        }
+
+        .container p {
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 1.2em;
+            text-align: justify;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        
+        
 /* Slideshow */
 .slideshow-container {
   position: relative;
@@ -539,6 +567,10 @@ section h2 {
 
 /* Pour petits écrans */
 @media (max-width: 768px) {
+   .container {
+           margin: 20px;
+                padding: 20px;
+   }
    .thematic-container {
    flex-direction: column;
  }
