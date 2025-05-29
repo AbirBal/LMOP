@@ -72,11 +72,10 @@ h1{
     
     .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(1200 px, 1fr));
   gap: 30px;
   padding: 40px;
   margin-left: auto;
-  margin-right: auto;
 }
  .project-card {
    background-color: #ffffff;
@@ -87,6 +86,7 @@ h1{
    flex-direction: column;
    justify-content: space-between;
    transition: transform 0.3s ease;
+   
  }
  .project-card:hover {
    transform: translateY(-8px);
