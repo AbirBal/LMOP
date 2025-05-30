@@ -130,7 +130,7 @@ h1{
   scroll-margin-top: 140px; /* hauteur de ta navbar */
 }
    .cards-container {
-    margin-bottom: 60px;
+      margin-bottom: 60px;
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
@@ -154,8 +154,7 @@ h1{
     }
 
     .profile-pic {
-      position: absolute;
-      top: -50px;
+      position: relative;
       left: 50%;
       transform: translateX(-50%);
       width: 100px;
