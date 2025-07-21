@@ -77,10 +77,12 @@ font-family: "Merriweather", serif, sans-serif;
     flex-direction: column;
     gap: 20px;
     text-align: center;
+    
   }
 
   .footer-section {
     flex: none;
     width: 100%;
   }
+  
 }

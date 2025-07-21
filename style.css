@@ -57,7 +57,7 @@ body {
 
 
 .mySlides img {
-  height: 70vh; /* ou 70vh pour garder une belle taille */
+  height: auto; /* ou 70vh pour garder une belle taille */
   width: 100%;
   object-fit:cover; /* évite de rogner l’image */
   width: 100%;
@@ -588,17 +588,14 @@ section h2 {
 }
 
 
-  .slideshow-container {
-    max-height: 70vh;
-    overflow: hidden;
-  }
+ 
 }
 @media (max-width: 967px) {
  .mySlides img {
     height: auto;
     max-height: 60vh; /* ou 70vh pour garder une belle taille */
     width: 100%;
-    object-fit:fill; /* évite de rogner l’image */
+    object-fit:cover; /* évite de rogner l’image */
   }
 
   .slideshow-container {
