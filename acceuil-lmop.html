@@ -90,28 +90,28 @@
   <div class="content">
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <img src="image\photos LMOP\slide 0.JPG" style="width:100%">
+        <img src="image\photos LMOP\slide 0.JPG" style="width:100%" alt="Slide 1">
       </div>
       <div class="mySlides fade">
-        <img src="image\photos LMOP\slide2.jpg" style="width:100%">
+        <img src="image\photos LMOP\slide2.jpg" style="width:100%" alt="Slide 2">
       </div>
       <div class="mySlides fade">
-         <img src="image\photos LMOP\slide3.jpg" style="width:100%">
+         <img src="image\photos LMOP\slide3.jpg" style="width:100%" alt="Slide 3">
       </div>
       <div class="mySlides fade">
-        <img src="image\photos LMOP\slide 1.jpeg" style="width:100%">
+        <img src="image\photos LMOP\slide 1.jpeg" style="width:100%"   alt="Slide 4" >
       </div>
       <div class="mySlides fade">
-        <img src="image\photos LMOP\slide 11.JPG" style="width:100%">
+        <img src="image\photos LMOP\slide 11.jpeg" style="width:100%" alt="Slide 5">
       </div>
       <div class="mySlides fade">
-        <img src="image\photos LMOP\slide 5 (1).jpeg" style="width:100%">
+        <img src="image\photos LMOP\slide 5 (1).jpeg" style="width:100%"  alt="Slide 6">
       </div>    
       <div class="mySlides fade">
-        <img src="image\photos LMOP\slide 12.jpeg" style="width:100%">
+        <img src="image\photos LMOP\slide 12.jpeg" style="width:100%" alt="Slide 7">
       </div>
       <div class="mySlides fade">
-        <img src="image\photos LMOP\slide 7.jpeg" style="width:100%">
+        <img src="image\photos LMOP\slide 7.jpeg" style="width:100%" alt="Slide 8">
       </div>
 
     <div style="text-align:center; margin-top: 0px;">
@@ -312,7 +312,6 @@ Laboratoire spécialisé dans la synthèse et la caractérisation de matériaux 
   <!-- Inclusion de Google Translate -->
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script src="translate.js"></script>
-  <script src="login.js"></script>
   <script src="slide.js"></script>
   <script src="navbar.js"></script>
    <script>
@@ -412,35 +411,6 @@ Laboratoire spécialisé dans la synthèse et la caractérisation de matériaux 
       });
     });
   </script>
-  <script>
-  let slideIndex = 0;
-  showSlides();
 
-  function showSlides() {
-    const slides = document.getElementsByClassName("mySlides");
-    const dots = document.getElementsByClassName("dot");
-
-    // cacher toutes les slides
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-
-    // avancer à la prochaine slide
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1; }
-
-    // retirer l'état "active" des dots
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].classList.remove("active");
-    }
-
-    // afficher la bonne slide et activer le bon dot
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].classList.add("active");
-
-    // recommencer après 5 secondes
-    setTimeout(showSlides, 5000);
-  }
-</script>
 </body>
 </html>
