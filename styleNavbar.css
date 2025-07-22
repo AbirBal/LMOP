@@ -258,7 +258,7 @@ body {
   }
 
   .navbar-links li ul {
-    position: relative;
+    position:absolute;
     top: 0;
     left: 0;
     box-shadow: none;
