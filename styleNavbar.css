@@ -214,7 +214,10 @@ body {
   overflow: visible !important;
 }
 
-
+.navbar-links  a.active {
+  background: linear-gradient(135deg, hsl(203, 69%, 46%), #84bae0);
+  color: white;
+}
 /* ===============================
    RESPONSIVE DESIGN
 ================================ */
@@ -285,4 +288,6 @@ body {
     box-shadow: none;
     background: #f0f0f0;
   }
+  
+
 }
